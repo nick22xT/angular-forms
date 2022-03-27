@@ -1,27 +1,27 @@
-# AngularForms
+# ANGULAR REACTIVE FORMS
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 13.2.6.
+Ejercicio de formularios del curso Angular avanzado de Incluit.
 
-## Development server
+![Preview](https://github.com/Lucasconci148/angular-forms/blob/master/src/assets/card.png)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+### Pre requisitos. 
+ 
+ Se deberá contar con la instalación de nodejs y angular para poder correr el proyecto de forma local.
 
-## Code scaffolding
+### Instalación.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+ * 1 - Clonar el proyecto.
+ * 2 - Cambiar de directorio a la carpeta del proyecto `angular-forms`.
+ * 3 - Ejecutar en la consola el siguiente comando para instalar las dependencias `npm install`.
+ * 4 - Levantar el proyecto con el siguiente comando `ng serve -o`. Al finalizar la tarea se abrira el navegador seteado por defecto y se visualizará el formulario. En caso de no abrirse sólo. Abrir un navegador y colocar la siguiente url: `http://localhost:4200/`.
 
-## Build
+### Actividad.
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+  * 1 - El Alumno deberá crear un branch con su nombre partiendo desde master y trabajar sobre el mismo.
+  * 2 - Se deberá aplicar lo aprendido sobre reactive forms para darle funcionalidad al formulario maquetado.
 
-## Running unit tests
+### Casos a probar.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+  - Todos los campos del formulario deben ser obligatorios, el boton `Enviar` sólo se habilita si los campos estan completos.
+  - Al presionar el boton `Enviar` se debe imprimir por consola un JSON con la información que el usuario ingresó.
+  - Validación del formato de los campos: Edad números hasta el 180 y Email con formato correspondiente.
