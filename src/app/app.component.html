@@ -4,28 +4,28 @@
   <div class="form-card">
       <h1 class="title">Reactive Forms</h1>
 
-      <form class="form">
+      <form class="form" [formGroup]="form">
         <div class="form__group field">
-          <input type="input" class="form__field" placeholder="Nombre" />
+          <input type="input" class="form__field" placeholder="Nombre" formControlName="nombre" />
           <label for="Nombre" class="form__label">Nombre</label>
         </div>
   
         <div class="form__group field">
-          <input type="input" class="form__field" placeholder="Edad" />
+          <input type="number" class="form__field" placeholder="Edad" formControlName="edad" />
           <label for="Edad" class="form__label">Edad</label>
         </div>
   
         <div class="form__group field">
-          <input type="input" class="form__field" placeholder="Empresa" />
+          <input type="input" class="form__field" placeholder="Empresa" formControlName="empresa" />
           <label for="Empresa" class="form__label">Empresa</label>
         </div>
   
         <div class="form__group field">
-          <input type="input" class="form__field" placeholder="Email" />
+          <input type="input" class="form__field" placeholder="Email" formControlName="email" />
           <label for="Email" class="form__label">Email</label>
         </div>
      
-        <button class="btn" [disabled]="false"> Enviar </button>
+        <button class="btn" [disabled]="!form.valid" (click)="submit()"> Enviar </button>
       </form>
      
   </div>
